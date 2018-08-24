@@ -44,7 +44,7 @@ var ancho = $(window).width();
         //alto para las vistas que no son el home
         $("#breadcrumb-list").css("height","379px");
   
-        $("#calendar-9").removeAttr("style");
+        $("#calendar-10").removeAttr("style");
         //$("#calendar-9").attr("style","margin-top:16%");
 
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
@@ -72,12 +72,12 @@ var ancho = $(window).width();
     }
   	else{
       		//margen superior a las vistas que no sean la principal
-			$("#content").removeAttr("style");
+		$("#content").removeAttr("style");
       		$("#content").attr("style","margin-top:0px;");
 	
       	
-          	$("#calendar-9").removeAttr("style");
-      		$("#calendar-9").attr("style","display:none;");        
+          	$("#calendar-10").removeAttr("style");
+      		$("#calendar-10").attr("style","display:none;");        
 
       	//varia el margen dependiendo de la resolución
         if(ancho<768){
