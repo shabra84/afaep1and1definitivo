@@ -6345,7 +6345,7 @@ body.body-font-5 .wpcf7 textarea {
 	}
         
         #media_image-2,#calendar-10{
-            display: none;
+            display: none !important;
         }
 }
 
