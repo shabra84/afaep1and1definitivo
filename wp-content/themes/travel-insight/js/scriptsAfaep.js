@@ -1,3 +1,4 @@
+//hecho por fernando mangas
 function evento(x) {
   	x.firstChild.style.display = "block";
 }
