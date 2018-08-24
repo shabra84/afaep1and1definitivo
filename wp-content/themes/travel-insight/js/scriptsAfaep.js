@@ -46,13 +46,13 @@ var ancho = $(window).width();
         $("#breadcrumb-list").css("height","379px");
   
         $("#calendar-10").removeAttr("style");
-        $("#media_image-2").empty();
+        
 
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
     var url = "http://www.pelambres.es/afeap84/";
     if(location.href==url){
 
-            $("#divevento").css("display","none");      		
+            $("#divevento").css("display","none");  
 
             //arreglo margen y alto en la vista principal
             $(".wrapper.page-section.no-padding-bottom").css("margin-top","-15%");
@@ -76,9 +76,11 @@ var ancho = $(window).width();
 		$("#content").removeAttr("style");
       		$("#content").attr("style","margin-top:0px;");
 	
+                //elimino la fotito de la entrada
+                $("#media_image-2").empty();
       	
-          	$("#calendar-10").removeAttr("style");
-      		$("#calendar-10").attr("style","display:none;");        
+                //elimino el calendario
+          	$("#calendar-10").empty();     
 
       	//varia el margen dependiendo de la resolución
         if(ancho<768){
