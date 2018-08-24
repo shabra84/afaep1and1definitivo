@@ -46,7 +46,7 @@ var ancho = $(window).width();
         $("#breadcrumb-list").css("height","379px");
   
         $("#calendar-10").removeAttr("style");
-        //$("#calendar-9").attr("style","margin-top:16%");
+        $("#media_image-2").empty();
 
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
     var url = "http://www.pelambres.es/afeap84/";
