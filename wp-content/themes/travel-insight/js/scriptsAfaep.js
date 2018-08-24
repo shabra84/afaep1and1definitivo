@@ -72,6 +72,11 @@ var ancho = $(window).width();
       
     }
   	else{
+            
+                //margen de las vistas que no son la web principal
+                $("#colophon .widget").removeAttr("style");
+                $("#colophon .widget").attr("style","margin-top:0%;padding-top:0%;");
+            
       		//margen superior a las vistas que no sean la principal
 		$("#content").removeAttr("style");
       		$("#content").attr("style","margin-top:0px;");
