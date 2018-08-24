@@ -6344,9 +6344,10 @@ body.body-font-5 .wpcf7 textarea {
 		right: 110px;
 	}
         
-        /*#media_image-2,#calendar-10{
-            display: none !important;
-        }*/
+        #media_image-2,#calendar-10{
+            margin-top:0px;
+            padding-top:0px;
+        }
 }
 
 @media screen and (max-width: 600px) {
