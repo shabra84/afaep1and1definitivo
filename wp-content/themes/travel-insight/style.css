@@ -6282,6 +6282,7 @@ body.body-font-5 .wpcf7 textarea {
 	}
 	footer#colophon .widget {
 	    padding-right: 0;
+            padding-top: 15%;
 	}
 	.no-sidebar.archive #primary.col-2 .column-wrapper:nth-child(odd), 
 	.no-sidebar.search #primary.col-2 .column-wrapper:nth-child(odd), 
@@ -6886,6 +6887,10 @@ div#calendar-9 {
   .fixed {
     width: 40% !important;
  }
+ 
+ #colophon #calendar-10 {
+    padding-top: 15%;
+  }
 }
   
 @media screen and (max-width: 767px){
