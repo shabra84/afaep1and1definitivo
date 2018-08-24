@@ -6343,6 +6343,10 @@ body.body-font-5 .wpcf7 textarea {
 	#adventure .slick-prev {
 		right: 110px;
 	}
+        
+        #media_image-2,#calendar-10{
+            display: none;
+        }
 }
 
 @media screen and (max-width: 600px) {
