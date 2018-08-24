@@ -1497,7 +1497,7 @@ footer#colophon .widget.widget_latest_post ul .has-post-thumbnail .post-image im
     padding-bottom: 0px;
 }
 footer#colophon .widget {
-	padding-right: 25px;
+	/*padding-right: 25px;*/
         margin-top: -59px;
         /*border-top: 2px dashed;*/
         padding-top: 19px;
@@ -6956,7 +6956,7 @@ td{
 .margenResponsive{
 	margin-top:-36px !important;
 }
-@media screen and (min-width: 1080px and max-width:1919px){
+@media screen and (min-width: 1080px and max-width: 1919px){
   	.wrapper.page-section.no-padding-bottom {
       margin-top: -36%;
       margin-bottom: -5%;
@@ -6985,4 +6985,11 @@ td{
   #content {
      margin-top: 0px;
   }
+}
+
+@media screen and (min-width: 768px){
+#calendar-10 {
+    padding-bottom: 3%;
+    margin-bottom: 11px;
+}
 }
