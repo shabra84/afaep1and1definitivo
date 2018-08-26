@@ -51,7 +51,6 @@ var ancho = $(window).width();
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
     var url = "http://www.pelambres.es/afeap84/";
     if(location.href==url){
-
             $("#divevento").css("display","none");  
 
             //arreglo margen y alto en la vista principal
@@ -59,7 +58,7 @@ var ancho = $(window).width();
 
 			//margen al texto de bienvenida
       		$(".entry-content").removeAttr("style");
-      		$(".entry-content").attr("style","color:silver;text-align:center;padding-top:76px;");
+      		$(".entry-content").attr("style","color:silver;text-align:center;padding-top:19%;");
        	    $(".entry-content svg").attr("id","ocultarIcono");
       		$(".entry-content svg").removeAttr("class");
             $(".entry-content").html("<h6 style='padding-top:5px;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
@@ -70,6 +69,41 @@ var ancho = $(window).width();
               $("#primary").attr("style","margin-bottom: -87px;");
             }*/
       
+      if(ancho>=1080 && ancho<1290){
+      		//margen al texto de bienvenida
+      		$(".entry-content").removeAttr("style");
+      		$(".entry-content").attr("style","color:silver;text-align:center;padding-top:4%;");
+       	    $(".entry-content svg").attr("id","ocultarIcono");
+      		$(".entry-content svg").removeAttr("class");
+            $(".entry-content").html("<h6 style='padding-top:0%;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
+        
+      }
+      else if(ancho==1024){
+      
+           $("#content").removeAttr("id"); 
+           $(".entry-content").html("<h6 style='margin-bottom:5%;padding-top:0%;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
+
+      }
+      else if(ancho<1080 && ancho>=720){
+            //margen al texto de bienvenida
+      		$(".entry-content").removeAttr("style");
+      		$(".entry-content").attr("style","color:silver;text-align:center;padding-top:8%;");
+       	    $(".entry-content svg").attr("id","ocultarIcono");
+      		$(".entry-content svg").removeAttr("class");
+            $(".entry-content").html("<h6 style='padding-top:0%;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
+        
+    	}
+      
+       else if(ancho>=1290){
+            //margen al texto de bienvenida
+      		$(".entry-content").removeAttr("style");
+      		$(".entry-content").attr("style","color:silver;text-align:center;padding-top:8%;");
+       	    $(".entry-content svg").attr("id","ocultarIcono");
+      		$(".entry-content svg").removeAttr("class");
+            $(".entry-content").html("<h6 style='padding-top:0%;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
+              
+      }
+     
     }
   	else{
             
@@ -77,15 +111,15 @@ var ancho = $(window).width();
                 $("#colophon .widget").removeAttr("style");
                 $("#colophon .widget").attr("style","padding-top:0%;padding-bottom:0%;");
             
-      		//margen superior a las vistas que no sean la principal
-		$("#content").removeAttr("style");
-      		$("#content").attr("style","margin-top:0px;");
+      		    //margen superior a las vistas que no sean la principal
+		        $("#content").removeAttr("style");
+      		    $("#content").attr("style","margin-top:0px;");
 	
                 //elimino la fotito de la entrada
                 $("#media_image-2").empty();
       	
                 //elimino el calendario
-          	$("#calendar-10").empty();     
+          	    $("#calendar-10").empty();     
 
       	//varia el margen dependiendo de la resolución
         if(ancho<768){
@@ -97,6 +131,13 @@ var ancho = $(window).width();
           $("#primary").removeAttr("style");
           $("#primary").attr("style","margin-top: -175px;margin-bottom: -87px;");
 		}
+      	else if(ancho>=1290){
+        
+  
+          $(".page-section").attr("style","padding-top:5%;margin-bottom:0%;");
+        
+        }
+   
       
       
     }
