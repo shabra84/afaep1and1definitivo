@@ -6244,12 +6244,6 @@ body.body-font-5 .wpcf7 textarea {
         #calendar-10 {
             padding-top: 5% !important;
         }
-        
-        /* Alto de la cabecera */
-        #page{
-            height: 189px;
-        }
-}
 
 	.no-sidebar.archive #primary.col-2 .column-wrapper:nth-child(odd), 
 	.no-sidebar.search #primary.col-2 .column-wrapper:nth-child(odd), 
@@ -6457,6 +6451,14 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (max-width: 421px) {
     
+    
+    
+        /* Alto de la cabecera*/
+        #page{
+            height: 189px;
+        }
+        
+        
         /*pie de pagina*/
         #footermio {
             background: #42a12c;
