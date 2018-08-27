@@ -20,11 +20,10 @@ var ancho = $(window).width();
         //pongo color blanco a la letra donde hay eventos
         var existeNodo = null;
         for(var i=1;i<=31;i++){
-            existeNodo = $(i).attr('style');
+            existeNodo = $("#"+i).attr('style');
             if(existeNodo){
-                alert("pasa");
-                $(i).removeAttr("style");
-                $(i).attr("style","color:#fff;");
+                $("#"+i).removeAttr("style");
+                $("#"+i).attr("style","color:#fff;");
             }
         }
 
