@@ -1482,7 +1482,7 @@ footer#colophon .widget.widget_latest_post ul .has-post-thumbnail .post-image im
 footer#colophon .widget {
 	padding-right: 25px;
         margin-top: 25px;
-        border-top: 2px dashed;
+        /*border-top: 2px dashed;*/
         padding-top: 19px;
 }
 
@@ -3404,6 +3404,7 @@ body.search .no-results .page-title {
 .widget-title ,
 .article-title h2 a  {
     color: #303c48;
+    display: none;
 }
 .widget-title {
     margin-bottom: 0.8em;
