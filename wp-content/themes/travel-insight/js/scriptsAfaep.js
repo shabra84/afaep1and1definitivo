@@ -115,6 +115,10 @@ var ancho = $(window).width();
         }
   	else{
             
+            
+                //Alto de la web en vistas que no son la pricipal
+                $("#page").attr("style","height:190px;");
+                
                 //margen de las vistas que no son la web principal
                 $("#colophon .widget").removeAttr("style");
                 $("#colophon .widget").attr("style","padding-top:0%;padding-bottom:0%;");
