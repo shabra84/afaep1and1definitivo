@@ -6452,7 +6452,7 @@ body.body-font-5 .wpcf7 textarea {
 @media screen and (max-width: 421px) {
         
         #content{
-            margin-top: -110%;
+            margin-top: -110% !important;
         }
     
         /*pie de pagina*/
