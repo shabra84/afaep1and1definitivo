@@ -6454,6 +6454,10 @@ body.body-font-5 .wpcf7 textarea {
         /*#calendar_wrap {
             display: none;
         }*/
+        
+        .fixed{
+            margin-bottom: 9% !important;
+        }
     
         .hentry {
             margin: 0px;
