@@ -6461,6 +6461,11 @@ body.body-font-5 .wpcf7 textarea {
             color: #fff;
             margin-left: 12%;
         }
+        
+        
+        .bottom-footer {
+            display: none;
+        }
     
         /* Eslogan de la web principal */
         .archive .blog-content p, .search .blog-content p, .blog .blog-content p {
