@@ -48,8 +48,11 @@ var ancho = $(window).width();
         
 
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
-    var url = "http://www.pelambres.es/afeap84/";
-    if(location.href==url){
+    var url = "http://localhost/afeap84/";
+    var otraurl = "http://www.pelambres.es/afeap84/";
+    var urlfinal = "http://www.afaep.es";
+    //detectamos si es la página home de la web
+    if(location.href==url || location.href==otraurl || location.href==urlfinal){
             $("#divevento").css("display","none");  
 
             //arreglo margen y alto en la vista principal
