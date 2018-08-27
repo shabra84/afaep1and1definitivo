@@ -20,20 +20,13 @@ var ancho = $(window).width();
         //pongo color blanco a la letra donde hay eventos
         var existeNodo = null;
         for(var i=1;i<=31;i++){
-            existeNodo = $(i).attr('id');
+            existeNodo = $(i).attr('style');
             if(existeNodo){
+                alert("pasa");
                 $(i).removeAttr("style");
                 $(i).attr("style","color:#fff;");
             }
         }
-        
-        
-        var EmpName = $("div#esd-names div#name").attr('class');
-if(EmpName == null){
-  console.log("El valor de EmpName " + EmpName); //Nulo
-} else {
-  console.log("El valor de EmpName es " + EmpName); //Cualquier otro
-}
 
 
         $("#menu-item-150").click(function(){
