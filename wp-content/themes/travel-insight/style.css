@@ -6456,6 +6456,9 @@ body.body-font-5 .wpcf7 textarea {
             margin: 0 0 -0.5em;
         }
     
+        #primary{
+            margin-top: 5%;
+        }
     
         #content{
             margin-top: -110% !important;
