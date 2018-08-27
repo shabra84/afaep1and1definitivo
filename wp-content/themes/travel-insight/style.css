@@ -6451,6 +6451,14 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (max-width: 421px) {
         
+        /*#calendar_wrap {
+            display: none;
+        }*/
+    
+        .hentry {
+            margin: 0px;
+        }
+    
         /*Si se borra el id cambia ;)*/
         #page {
             margin: 0 0 -0.5em;
