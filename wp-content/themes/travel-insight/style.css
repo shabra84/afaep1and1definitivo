@@ -6466,11 +6466,12 @@ body.body-font-5 .wpcf7 textarea {
         .bottom-footer {
             display: none;
         }
-        
-        #colophon{
-            height: 479px;
+
+        #colophon .column-wrapper:nth-child(2n+1) {
+            clear: both;
+            height: 463px;
         }
-    
+
         /* Eslogan de la web principal */
         .archive .blog-content p, .search .blog-content p, .blog .blog-content p {
             color: #778a9c;
