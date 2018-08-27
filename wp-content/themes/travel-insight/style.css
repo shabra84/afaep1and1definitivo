@@ -6456,6 +6456,11 @@ body.body-font-5 .wpcf7 textarea {
             font-size: 14px;
             width: 100%;
         }
+        
+        #footermio a {
+            color: #fff;
+            margin-left: 12%;
+        }
     
         /* Eslogan de la web principal */
         .archive .blog-content p, .search .blog-content p, .blog .blog-content p {
