@@ -6451,6 +6451,10 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (max-width: 421px) {
         
+        #content{
+            margin-top: -110%;
+        }
+    
         /*pie de pagina*/
         #footermio {
             background: #42a12c;
