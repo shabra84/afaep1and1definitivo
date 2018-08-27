@@ -18,11 +18,13 @@ var ancho = $(window).width();
 
         
         //pongo color blanco a la letra donde hay eventos
-        for(var i=1;i<=31;i++){
-            $('td').removeAttr("style");
-            $('td').attr("style","color:#fff;");
+  /*      for(var i=1;i<=31;i++){
+            if($(i).length ){
+                $('td').removeAttr("style");
+                $('td').attr("style","color:#fff;");
+            }
         }
-
+*/
 
         $("#menu-item-150").click(function(){
         if(controlMenu)
