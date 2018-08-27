@@ -6238,6 +6238,7 @@ body.body-font-5 .wpcf7 textarea {
             padding-right: 0;
             margin-top: 0%;
             padding-top: 0%;
+            margin-bottom: 0%;
 	}
 	.no-sidebar.archive #primary.col-2 .column-wrapper:nth-child(odd), 
 	.no-sidebar.search #primary.col-2 .column-wrapper:nth-child(odd), 
@@ -6465,11 +6466,6 @@ body.body-font-5 .wpcf7 textarea {
         
         .bottom-footer {
             display: none;
-        }
-
-        #colophon .column-wrapper:nth-child(2n+1) {
-            clear: both;
-            height: 463px;
         }
 
         /* Eslogan de la web principal */
