@@ -19,8 +19,10 @@ var ancho = $(window).width();
         
         //pongo color blanco a la letra donde hay eventos
         for(var i=1;i<=31;i++){
-            $(i).removeAttr("style");
-            $(i).attr("style","color:#fff;");
+            if($(i).length ){
+                $(i).removeAttr("style");
+                $(i).attr("style","color:#fff;");
+            }
         }
 
 
