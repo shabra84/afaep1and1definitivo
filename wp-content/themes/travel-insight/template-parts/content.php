@@ -45,7 +45,6 @@ $img_enable_class = ( false == $options['blog_img_enable'] ) ? 'no-img-article' 
 
 		<div class="entry-content">
                     
-                    <i style="font-size:84px;margin:0 auto;display:table;margin-top:100px;" class="fas fa-home"></i>
                     
                     
 			<p>
