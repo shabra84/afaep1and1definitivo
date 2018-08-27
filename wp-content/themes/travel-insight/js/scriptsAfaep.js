@@ -25,6 +25,10 @@ var ancho = $(window).width();
                 $("#"+i).removeAttr("style");
                 $("#"+i).attr("style","background:#42a12c;color:#fff;");
             }
+            
+            
+            $("#evento"+i).removeAttr("style");
+            $("#evento"+i).attr("style","display:block;border: 1px solid silver;padding:4%;");
         }
 
 
