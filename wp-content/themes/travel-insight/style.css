@@ -6445,6 +6445,18 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (max-width: 421px) {
     
+        /*pie de pagina*/
+        #footermio {
+            background: #42a12c;
+            color: #fff;
+            margin: 0 auto;
+            display: table;
+            height: 53px;
+            padding: 4%;
+            font-size: 14px;
+            width: 100%;
+        }
+    
         /* Eslogan de la web principal */
         .archive .blog-content p, .search .blog-content p, .blog .blog-content p {
             color: #778a9c;
