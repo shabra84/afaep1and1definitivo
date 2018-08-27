@@ -23,7 +23,7 @@ var ancho = $(window).width();
             existeNodo = $("#"+i).attr('style');
             if(existeNodo){
                 $("#"+i).removeAttr("style");
-                $("#"+i).attr("style","color:#fff;");
+                $("#"+i).attr("style","background:#42a12c;color:#fff;");
             }
         }
 
