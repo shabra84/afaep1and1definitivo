@@ -53,10 +53,10 @@ var ancho = $(window).width();
     var urlfinal = "http://www.afaep.es";
     //detectamos si es la página home de la web
     if(location.href==url || location.href==otraurl || location.href==urlfinal){
-            $("#divevento").css("display","none");  
-
-            //arreglo margen y alto en la vista principal
-            $(".wrapper.page-section.no-padding-bottom").css("margin-top","-15%");
+            
+           //página principal
+            
+           /* $("#divevento").css("display","none");  
 
             //margen al texto de bienvenida
             $(".entry-content").removeAttr("style");
@@ -66,11 +66,6 @@ var ancho = $(window).width();
             $(".entry-content").html("<h6 style='padding-top:5px;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
         
 
-      		/*if(ancho<=1024 && ancho>=768){
-              $("#primary").removeAttr("style");
-              $("#primary").attr("style","margin-bottom: -87px;");
-            }*/
-      
             if(ancho<=720){
                 //margen al texto de bienvenida
                 $(".entry-content").removeAttr("style");
@@ -100,7 +95,7 @@ var ancho = $(window).width();
                 $(".entry-content").html("<h6 style='padding-top:0%;color:#8f8c9d;'>ASOCIACIÓN DE FAMILIARES Y ENFERMOS PSíQUICOS</h6>");
                            
             }
-     
+     */
         }
   	else{
             
