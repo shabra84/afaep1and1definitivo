@@ -18,13 +18,23 @@ var ancho = $(window).width();
 
         
         //pongo color blanco a la letra donde hay eventos
-  /*      for(var i=1;i<=31;i++){
-            if($(i).length ){
-                $('td').removeAttr("style");
-                $('td').attr("style","color:#fff;");
+        var existeNodo = null;
+        for(var i=1;i<=31;i++){
+            existeNodo = $(i).attr('id');
+            if(existeNodo){
+                $(i).removeAttr("style");
+                $(i).attr("style","color:#fff;");
             }
         }
-*/
+        
+        
+        var EmpName = $("div#esd-names div#name").attr('class');
+if(EmpName == null){
+  console.log("El valor de EmpName " + EmpName); //Nulo
+} else {
+  console.log("El valor de EmpName es " + EmpName); //Cualquier otro
+}
+
 
         $("#menu-item-150").click(function(){
         if(controlMenu)
