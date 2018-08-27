@@ -16,6 +16,13 @@ var controlMenu = true;
 var otroControlMenu = true;
 var ancho = $(window).width();
 
+        
+        //pongo color blanco a la letra donde hay eventos
+        for(var i=1;i<=31;i++){
+            $(i).css("color","#fff");
+        }
+
+
         $("#menu-item-150").click(function(){
         if(controlMenu)
               $("#menu-item-150 .sub-menu").css("display","block");
