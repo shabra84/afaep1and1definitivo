@@ -6444,6 +6444,15 @@ body.body-font-5 .wpcf7 textarea {
 	}
 }
 @media screen and (max-width: 421px) {
+    
+        /* Eslogan de la web principal */
+        .archive .blog-content p, .search .blog-content p, .blog .blog-content p {
+            color: #778a9c;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            text-align: center;
+        }
+   
 	.main-navigation ul ul a,
 	.menu.nav-menu {
 	    text-align: left;
