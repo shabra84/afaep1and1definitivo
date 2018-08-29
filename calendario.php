@@ -17,17 +17,20 @@ Hecho por Fernando Mangas
 		<th>Vie</th><th>Sab</th><th>Dom</th>
 	</tr>
         <?php
-        //datos de conexion a la base de datos
-        define("sql" , "SELECT * FROM eventos where date_format(fecha_ini,'%m')=date_format(now(),'%m') order by 3");
-        define("servidor_ip" , "db750156060.db.1and1.com");
-        define("usuario", "dbo750156060");
-        define("password" , "@Fer607372785");
-        define("nombrebase", "db750156060");
-        define("dimensionDias",31);
-        
         //agragamos la libreria con funciones para la conexión a la base de datos
         include("librerias/funciones.php");
- 
+        
+        //si estamos en local cargamos la conexión del xamp, e.o.c 1and1.
+        include("librerias/conexion_local.php");
+        
+        if($_SERVER['HTTP_HOST']!="127.0.0.1"){
+            //agregamos conexión a la base de datos
+            include("librerias/conexion.php");
+        }
+
+        //datos de conexion a la base de datos
+        define("sql" , "SELECT * FROM eventos where date_format(fecha_ini,'%m')=date_format(now(),'%m') order by 3");
+
         $html = "";
           
         //diccionario con colores
