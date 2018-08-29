@@ -3651,7 +3651,7 @@ body.no-footer-widgets .site-footer:before {
 .search .blog-content p,
 .blog .blog-content p {
     color: #778a9c;
-    margin-bottom: 69px;
+    /*margin-bottom: 69px;*/
     text-align: center;
 }
 .archive .blog-content .icon a,
@@ -6761,6 +6761,7 @@ body.body-font-5 .wpcf7 textarea {
 
 
 /*  EDITADO POR MI */
+/* Cabecera */
 img.custom-logo {
 	
 	border-radius:46px 46px 46px 46px;
@@ -6802,12 +6803,6 @@ div#primary > #main > div.blog-text{
     display:block;
     
 }
-
-
-
-
-
-
 
 .sub-menu{
   overflow:visible !important;
