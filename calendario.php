@@ -18,14 +18,15 @@ Hecho por Fernando Mangas
 	</tr>
         <?php
         //agragamos la libreria con funciones para la conexión a la base de datos
-        include("librerias/funciones.php");
+        require("librerias/funciones.php");
         
         //si estamos en local cargamos la conexión del xamp, e.o.c 1and1.
-        include("librerias/conexion_local.php");
-        
-        if($_SERVER['HTTP_HOST']!="127.0.0.1"){
+        if($_SERVER['HTTP_HOST']=="127.0.0.1"){
             //agregamos conexión a la base de datos
-            include("librerias/conexion.php");
+            require("librerias/conexion_local.php");
+        }
+        else{
+            require("librerias/conexion.php");
         }
 
         //datos de conexion a la base de datos
