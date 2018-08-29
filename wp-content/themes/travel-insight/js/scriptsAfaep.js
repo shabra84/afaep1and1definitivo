@@ -64,7 +64,7 @@ var ancho = $(window).width();
         
 
 /*ESTO HAY QUE CAMBIARLO CUANDO SE CUELGUE EN EL SERVIDOR!!!*/
-    var url = "http://127.0.0.1/afeap84/";
+    var url = "http://127.0.0.1/afaep1and1definitivo/";
     var otraurl = "http://www.pelambres.es/afeap84/";
     var urlfinal = "http://www.afaep.es";
     //detectamos si es la página home de la web
