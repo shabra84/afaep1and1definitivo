@@ -5548,6 +5548,7 @@ body.body-font-5 .wpcf7 textarea {
         /* Espacio entre eventos */
         .fixed{
             margin-top: 4%;
+            margin-bottom: 4%;
         }
     
         #footermio {
