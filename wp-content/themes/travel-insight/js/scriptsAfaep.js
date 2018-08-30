@@ -135,12 +135,20 @@ var ancho = $(window).width();
           	$("#content").removeAttr("class");
           	$("#content").attr("class","margenResponsive site-footer page-section no-padding-bottom");
          }
-        else if(ancho<=1024 && ancho>=768){
+        else if(ancho<=1023 && ancho>=768){
           $("#primary").removeAttr("style");
           $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
         }
+        else if(ancho>=1024 && ancho<1029){
+          $("#primary").removeAttr("style");
+          $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
+          
+          //alto para las vistas que no son el home
+          $("#breadcrumb-list").css("height","505px");
+        }
       	else if(ancho>=1290){
-          $(".page-section").attr("style","padding-top:5%;margin-bottom:0%;");
+          $("#primary").removeAttr("style");
+          $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
         }
    
       
