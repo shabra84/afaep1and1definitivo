@@ -27,9 +27,15 @@ Hecho por Fernando Mangas
                 
             //agregamos conexión a la base de datos
             require("librerias/conexion_local.php");
+            
+            //conexión y extracción de datos en un array asociativo
+            $conexion = conexionMysql(servidor_ip,usuario,password,nombrebasealeternativa);
         }
         else{
             require("librerias/conexion.php");
+            
+            //conexión y extracción de datos en un array asociativo
+            $conexion = conexionMysql(servidor_ip,usuario,password,nombrebase);
         }
 
         //datos de conexion a la base de datos
@@ -48,10 +54,7 @@ Hecho por Fernando Mangas
         //posicion de la celda en la que empieza y final
         $diaSemana=date("w",mktime(0,0,0,$mes,1,$anio));
         $ultimoDiaMes=date("d",(mktime(0,0,0,$mes+1,1,$anio)-1));
-        $last_cell=$diaSemana+$ultimoDiaMes;
-
-        //conexión y extracción de datos en un array asociativo
-        $conexion = conexionMysql(servidor_ip,usuario,password,nombrebasealeternativa);       
+        $last_cell=$diaSemana+$ultimoDiaMes;       
         
         $day = 1;
         $m = 0;
