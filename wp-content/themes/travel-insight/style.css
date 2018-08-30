@@ -5539,7 +5539,13 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (min-width: 1200px) {
     
-    /* Espacio entre eventos */
+        #calendar-10 {
+            width: 64%;
+            margin: 0 auto;
+            display: table;
+        }   
+    
+        /* Espacio entre eventos */
         .fixed{
             margin-top: 4%;
         }
