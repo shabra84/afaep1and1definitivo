@@ -45,13 +45,21 @@ and open the template in the editor.
         
         <?php 
             //agregamos la libreria con funciones para la conexión a la base de datos
-            include("librerias/funciones.php");
+            require("librerias/funciones.php");
         
-            //datos de conexion a la base de datos
-            define("servidor_ip" , "db750156060.db.1and1.com");
-            define("usuario", "dbo750156060");
-            define("password" , "@Fer607372785");
-            define("nombrebase", "db750156060");
+            //si estamos en local cargamos la conexión del xamp, e.o.c 1and1.
+            if($_SERVER['HTTP_HOST']=="127.0.0.1"){
+                
+                //definimos el nombre de la base de datos
+                define("nombrebasealeternativa", "afaepeventos");
+                
+                //agregamos conexión a la base de datos
+                require("librerias/conexion_local.php");
+            }
+            else{
+                require("librerias/conexion.php");
+            }
+            
         
             if (isset($_POST["nombre"]) && $_SERVER['REQUEST_METHOD'] === 'POST') {
                  
@@ -65,7 +73,7 @@ and open the template in the editor.
                 . " VALUES ('$nombre','$inicial','$final','$descripcion')");
               
                 //conexión a la base de datos
-                $conexion = conexionMysql(servidor_ip,usuario,password,nombrebase);
+                $conexion = conexionMysql(servidor_ip,usuario,password,nombrebasealeternativa);
                 
                 //insertamos un evento a la base de datos
                 $exito = insertar($conexion,sql);

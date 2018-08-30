@@ -315,7 +315,7 @@ if ( ! function_exists( 'travel_insight_footer_site_info' ) ) :
 
 		$copyright_text = $options['copyright_text'];
 		?>
-		<div class="bottom-footer">
+		<!--<div class="bottom-footer">
 			<div class="wrapper">
 				<div class="pull-left">
 					
@@ -323,21 +323,20 @@ if ( ! function_exists( 'travel_insight_footer_site_info' ) ) :
 						<section id="nav_menu-4" class="widget_nav_menu">
 							<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'menu', 'fallback_cb' => false ) ); ?>
 						</section>
-					</div><!-- .bottom-footer-->
+					</div>
 
 					<div class="site-info">
 						<p>
 							<?php echo travel_insight_santize_allow_tag( $options['copyright_text'] ); ?>
-							<!--<span> <?php esc_html_e( ' | ', 'travel-insight' ); ?> </span>
+							<?php esc_html_e( ' | ', 'travel-insight' ); ?> 
 							<?php
 							printf( esc_html__( '%1$s by %2$s', 'travel-insight' ), 'Travel Insight', '<a href="' . esc_url( 'https://www.themepalace.com/' ) . '" rel="designer" target="_blank">Theme Palace</a>' ); 
 							if ( function_exists( 'the_privacy_policy_link' ) ) {
 								the_privacy_policy_link( '<span> | </span>', '' );
 							}
 							?>
-						</p>
-       </div>--><!-- .site-info -->
-				</div><!-- .pull-left -->
+
+				</div>
 
 				<div class="pull-right">
 					<?php wp_nav_menu( array( 
@@ -348,13 +347,14 @@ if ( ! function_exists( 'travel_insight_footer_site_info' ) ) :
 	                'link_before'    => '<span class="screen-reader-text">',
 					'link_after'     => '</span>' . travel_insight_get_svg( array( 'icon' => 'chain' ) ),
 					) ); ?>
-				</div><!-- .pull-right -->
+				</div>
 
-			</div><!-- .wrapper -->
-		</div><!-- .bottom-footer -->
+			</div>
+		</div>
+                -->
 
 		<?php if ( true === $options['scroll_top_visible'] ) : ?>
-			<div class="backtotop"><?php echo travel_insight_get_svg( array( 'icon' => 'angle-down' ) ); ?></div>
+			<!--<div class="backtotop"><?php echo travel_insight_get_svg( array( 'icon' => 'angle-down' ) ); ?></div>-->
 		<?php endif;
 	}
 endif;

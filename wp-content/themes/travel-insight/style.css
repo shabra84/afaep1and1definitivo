@@ -1479,12 +1479,12 @@ footer#colophon .widget.widget_latest_post ul .has-post-thumbnail .post-image im
 #secondary .widget ul.children li.page_item {
     padding-bottom: 0px;
 }
-footer#colophon .widget {
+/*footer#colophon .widget {
 	padding-right: 25px;
         margin-top: 25px;
-        /*border-top: 2px dashed;*/
+        border-top: 2px dashed;
         padding-top: 19px;
-}
+}*/
 
 footer#colophon .widget.widget_latest_post ul .has-post-thumbnail .post-image img {
 	padding-right: 0;
@@ -5969,6 +5969,36 @@ body.body-font-5 .wpcf7 textarea {
 }
 
 @media screen and (max-width: 768px) {
+        
+        /* Espacio entre eventos */
+        .fixed{
+            margin-top: 4%;
+        }
+    
+        #footermio {
+            background: #42a12c;
+            color: #fff;
+            margin: 0 auto;
+            display: table;
+            height: 53px;
+            padding: 4%;
+            font-size: 14px;
+            width: 100%;
+            text-align:center;
+        }
+    
+    
+        #footermio a {
+            color: #fff;
+            margin-left: 12%;
+        }
+    
+    
+    
+        #media_image-2 {
+            margin-top: -3%;
+        }
+    
 	.bg-image {
 	    padding: 100px 0 200px 0;
 	}

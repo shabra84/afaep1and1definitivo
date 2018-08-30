@@ -137,7 +137,7 @@ var ancho = $(window).width();
          }
         else if(ancho<=1024 && ancho>=768){
           $("#primary").removeAttr("style");
-          $("#primary").attr("style","margin-top: -175px;margin-bottom: -87px;");
+          $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
         }
       	else if(ancho>=1290){
           $(".page-section").attr("style","padding-top:5%;margin-bottom:0%;");

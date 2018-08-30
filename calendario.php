@@ -22,6 +22,9 @@ Hecho por Fernando Mangas
         
         //si estamos en local cargamos la conexión del xamp, e.o.c 1and1.
         if($_SERVER['HTTP_HOST']=="127.0.0.1"){
+            //definimos el nombre de la base de datos
+            define("nombrebasealeternativa", "afaepeventos");
+                
             //agregamos conexión a la base de datos
             require("librerias/conexion_local.php");
         }
@@ -48,7 +51,7 @@ Hecho por Fernando Mangas
         $last_cell=$diaSemana+$ultimoDiaMes;
 
         //conexión y extracción de datos en un array asociativo
-        $conexion = conexionMysql(servidor_ip,usuario,password,nombrebase);       
+        $conexion = conexionMysql(servidor_ip,usuario,password,nombrebasealeternativa);       
         
         $day = 1;
         $m = 0;
