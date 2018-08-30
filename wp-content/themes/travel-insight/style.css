@@ -5545,6 +5545,9 @@ body.body-font-5 .wpcf7 textarea {
             display: table;
         }   
     
+        nav.breadcrumb-trail.breadcrumbs {
+            display: none;
+        }
         /* Espacio entre eventos */
         .fixed{
             margin-top: 4%;
