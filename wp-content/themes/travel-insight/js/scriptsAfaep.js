@@ -148,7 +148,7 @@ var ancho = $(window).width();
         }
       	else if(ancho>=1100){
           $("#primary").removeAttr("style");
-          $("#primary").attr("style","margin-top: -35%;margin-bottom: -2%;");
+          $("#primary").attr("style","margin-top: -34%;margin-bottom: -2%;");
         }
    
       
