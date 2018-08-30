@@ -139,16 +139,16 @@ var ancho = $(window).width();
           $("#primary").removeAttr("style");
           $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
         }
-        else if(ancho>=1024 && ancho<1029){
+        else if(ancho>=1024 && ancho<1100){
           $("#primary").removeAttr("style");
           $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
           
           //alto para las vistas que no son el home
           $("#breadcrumb-list").css("height","505px");
         }
-      	else if(ancho>=1290){
+      	else if(ancho>=1100){
           $("#primary").removeAttr("style");
-          $("#primary").attr("style","margin-top: -56%;margin-bottom: -7%;");
+          $("#primary").attr("style","margin-top: -35%;margin-bottom: -5%;");
         }
    
       

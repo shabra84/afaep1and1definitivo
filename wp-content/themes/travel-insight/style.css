@@ -5538,6 +5538,40 @@ body.body-font-5 .wpcf7 textarea {
 	}
 }
 @media screen and (min-width: 1200px) {
+    
+    /* Espacio entre eventos */
+        .fixed{
+            margin-top: 4%;
+        }
+    
+        #footermio {
+            background: #42a12c;
+            color: #fff;
+            margin: 0 auto;
+            display: table;
+            height: 53px;
+            padding: 2%;
+            font-size: 14px;
+            width: 100%;
+            text-align:center;
+        }
+    
+    
+        #footermio a {
+            color: #fff;
+            margin-left: 12%;
+        }
+        
+        #calendar_wrap {
+            margin-top: 4%;
+        }
+        
+    
+        #media_image-2 {
+            margin: 0 auto;
+            display: table;
+        }
+    
 	.site-footer .pull-right .social-icons {
 	    display: flex;
 	    align-items: center;
@@ -5652,6 +5686,10 @@ body.body-font-5 .wpcf7 textarea {
 }
 @media screen and (max-width: 1100px) {
     
+        #media_image-2 {
+            margin: 0 auto;
+            display: table;
+        }
     
         nav.breadcrumb-trail.breadcrumbs {
             display: none;
